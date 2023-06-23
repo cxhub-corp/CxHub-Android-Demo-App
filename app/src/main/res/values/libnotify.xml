@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Имя приложения из кабинета CxHub TODO: измените на свое -->
+    <string name="libnotify_application_name">my-app</string>
+
+    <!-- Firebase / Huawei project ID TODO: измените на свое -->
+    <string name="libnotify_server_id">1234456789101</string>
+
+    <!-- ID приложения из кабинета CxHub TODO: измените на свое -->
+    <string name="libnotify_application_id">100</string>
+
+    <!-- Секретный ключ приложения из кабинета CxHub TODO: измените на свой -->
+    <string name="libnotify_application_secret">12345a6a78c910ca111e28f13dca1c141bee51b1db6fab1d7181f920fd2f1022</string>
+
+    <!-- Рекомендовано: изменить иконку для уведомлений из CxHub -->
+    <string name="libnotify_resource_icon_id">mipmap/ic_launcher</string>
+    <!-- Опционально: изменить основной цвет уведомлений CxHub -->
+    <string name="libnotify_resource_color_id">color/colorPrimary</string>
+    <!-- Опционально: изменить дополнительный цвет уведомлений CxHub -->
+    <string name="libnotify_resource_contrast_color_id">color/colorContrast</string>
+    <!-- Опционально: настройки цвета для лендинга (см. онлайн документацию CxHub).
+        Если вы хотите изменить цвет, раскомментируйте соответствующую строчку и впишите свое
+        значение, например, android:color/white -->
+    <!--string name="libnotify_resource_bg_color_id" translatable="false">android:color/white</string-->
+    <!--string name="libnotify_resource_text_color_id" translatable="false" /-->
+    <!--string name="libnotify_resource_button_color_id" translatable="false" /-->
+    <!--string name="libnotify_resource_led_color_id" translatable="false" /-->
+    <!--string name="libnotify_resource_close_color_id" translatable="false" /-->
+
+    <!-- Опционально: звук уведомления. Чтобы узменить значение по умолчанию, раскомментируйте эту
+         строчку и впишите название своего аудио файла -->
+    <!--string name="libnotify_resource_sound">raw/open_ended</string-->
+</resources>
+
+
