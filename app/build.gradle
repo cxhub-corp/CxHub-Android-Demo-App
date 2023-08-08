@@ -36,10 +36,18 @@ android {
 dependencies {
     // CxHub SDK
     implementation ("ru.mail.libnotify:libnotify:0.2.18")
+
+    // Выберите нужное
     implementation ("ru.mail.libnotify:libnotify-platform-firebase:0.2.18")
+    //implementation ("ru.mail.libnotify:libnotify-platform-huawei:0.2.18")
+    //implementation ("ru.mail.libnotify:libnotify-platform-rustore:0.2.19")
+
     // Firebase
-    implementation 'com.google.firebase:firebase-messaging:23.1.2'
+    implementation 'com.google.firebase:firebase-messaging:23.2.1'
     implementation 'com.google.gms:google-services:4.3.15'
+
+    // RuStore
+    implementation('ru.rustore.sdk:pushclient:0.3.0')
 
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'

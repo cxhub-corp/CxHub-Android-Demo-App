@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import cxhub.demo.app.R
 import ru.mail.libnotify.api.NotificationFactory
 import ru.mail.libnotify.api.UserProperty
 import ru.mail.libnotify.api.UserPropertyApi
@@ -16,6 +15,11 @@ class MainActivity : AppCompatActivity() {
 
         // Узнать instanceId конкретного пользователя
         Log.i("MY", NotificationFactory.get(this).instanceId)
+
+        // Узнать пуш-токен
+        NotificationFactory.get(this).getPushToken { pushToken ->
+            Log.d("MY", "Push token: $pushToken")
+        }
 
         // Пример: сохранить пользовательское свойство
         val userProperty = UserProperty("some_property_name", "some_property_value")
